@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <section class="plant">
+        <div class="transparent-container">
+            <img src="images/odin-lined.png">
+            <h1>ODIN</h1>
+        </div>
+        <div class="photo-author">
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+        </div>
+    </section>
+    <section class="form">
+        <div class="text-container shadow">
+            <span>This is not a real online service! You know you need something like this in your life to help you realize your deepest
+            dreams.</span>
+            
+            <span>Sign up now to get started.</span>
+
+            <span>You know you want to.</span>
+        </div>
+        <div class="form-container">
+            <p>Let's do this</p>
+            <div class="input-container">
+                <div class="input-container-left">
+                    <form action="" method="post">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" minlength="3" maxlength="20" required>
+                    </form>
+                    <form action="" method="post">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" minlength="3" maxlength="30" required>
+                    </form>
+                    <form action="" method="post">
+                        <label for="password">Password*</label>
+                        <input type="password" id="password" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </form>
+                </div>
+                <div class="input-container-right">
+                    <form action="" method="post">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName"required>
+                    </form>
+                    <form action="" method="post">
+                        <label for="phoneNumber">Phone Number*</label>
+                        <input type="tel" id="phoneNumber" minlength="9" maxlength="15" required>
+                    </form>
+                    <form action="" method="post">
+                        <label for="confirmPassword">Confirm Password*</label>
+                        <input type="password" id="confirmPassword" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </form>
+                </div>
+                <div class="password-text">Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</div>
+            </div>
+        </div>
+        <div class="submit-container shadow">
+            <button type="submit" value="submit">Create Account</button>
+            <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
